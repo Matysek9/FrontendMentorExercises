@@ -9,19 +9,19 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: hsl(212, 45%, 89%);
   font-family: "Outfit";
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: auto 10px;
-  gap: 1rem;
+  overflow: hidden;
+ 
 }
 
 .card {
   max-width: 375px;
-  margin-top: 5rem;
   padding: 1rem;
   border-radius: 15px;
   background-color: hsl(0, 0%, 100%);
@@ -32,8 +32,7 @@ body {
 }
 
 img {
-  min-width: 100%;
-  height: auto;
+  width: 100%;
   border-radius: inherit;
 }
 
@@ -49,10 +48,4 @@ img {
 }
 .seccondaryText {
   color: hsl(220, 15%, 55%);
-}
-
-@media screen and (max-width: 375px){
-    .card{
-        max-width: 290px;
-    }
 }
